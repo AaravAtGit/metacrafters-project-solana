@@ -77,10 +77,10 @@ export default function App() {
   );
 
   // create a state variable for our connection
-  // const connection = new Connection(clusterApiUrl("devnet"), "confirmed");
+  const connection = new Connection(clusterApiUrl("devnet"), "confirmed");
   
   // connection to use with local solana test validator
-  const connection = new Connection("http://127.0.0.1:8899", "confirmed");
+  // const connection = new Connection("http://127.0.0.1:8899", "confirmed");
 
   // this is the function that runs whenever the component updates (e.g. render, refresh)
   useEffect(() => {
